@@ -46,7 +46,8 @@
                             integrated testing
                             features allow for a streamlined .</p>
                         <div>
-                            <button class="bg-[#1DD100] text-[20px] font-bold raleway rounded-lg px-4 py-2">Buy
+                            <button onclick="handleClick()"
+                                class="bg-[#1DD100] text-[20px] font-bold raleway rounded-lg px-4 py-2">Buy
                                 Tickets</button>
                         </div>
                     </div>
@@ -132,7 +133,8 @@
             </div>
         </section>
         <!-- ticket section -->
-        <section class="bg-[#F7F8F8] rounded-t-3xl border-t-2 border-green-400 mt-20 raleway">
+        <section id="showTiketSection"
+            class="hidden bg-[#F7F8F8] rounded-t-3xl border-t-2 border-green-400 mt-20 raleway">
             <div class="my-12 flex flex-col justify-center items-center text-center space-y-4">
                 <h1 class="text-4xl font-bold">P.H Paribahan</h1>
                 <p class="text-[18px] inter opacity-80">Yes, you can run unit tests and view the results directly within
@@ -156,7 +158,7 @@
                             <div>
                                 <button
                                     class="bg-[#1DD10026] text-green-400 text-[18px] font-semibold p-3 rounded-lg flex gap-1 inter"><img " src="
-                                        ./images/seat-green.png" alt=""><span>40</span>Seats
+                                        ./images/seat-green.png" alt=""><span id="seatsLeft">40</span>Seats
                                     left</button>
                             </div>
                         </div>
@@ -217,7 +219,7 @@
                                 </div>
                                 <div class="flex justify-center items-center gap-4 my-1 w-full">
                                     <kbd class="">A</kbd>
-                                    <kbd class="kbd py-3 px-7 lg:px-12">A1</kbd>
+                                    <kbd class="kbd py-3 px-7 lg:px-12 ">A1</kbd>
                                     <kbd class="kbd py-3 px-7 lg:px-12 mr-7">A2</kbd>
                                     <kbd class="kbd py-3 px-7 lg:px-12">A3</kbd>
                                     <kbd class="kbd py-3 px-7 lg:px-12">A4</kbd>
@@ -316,7 +318,7 @@
                         </div>
                         <div class="inter bg-[#F7F8F8] p-4 rounded-lg">
                             <div class="text-black flex justify-between border-b border-dashed border-gray-300 ">
-                                <p class="font-medium">Seat <sup><span
+                                <p class="font-medium">Seat <sup><span id="seatCapibality"
                                             class="text-white bg-green-400 rounded-2xl p-1 text-xs">0</span></sup> </p>
                                 <p class="font-medium">Class</p>
                                 <p class="font-medium mb-3">Price</p>
